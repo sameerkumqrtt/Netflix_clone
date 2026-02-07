@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function  Hii() {
+export default function Netflix() {
   return (
-    <div> Hii</div>
+    <div>Netflix</div>
   )
 }
