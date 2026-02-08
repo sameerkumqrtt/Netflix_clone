@@ -1,16 +1,16 @@
 import React from 'react'
 
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Netflix from './pages/Netflix'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import Player from './pages/Player'
 export default function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-        <Route exact path="/Login" element={<Login/>}/>
-        <Route exact path="/Signup" element={<Signup/>} />
+    <BrowserRouter basename="/Netflix_clone">
+      <Routes>
+        <Route exact path="/Login" element={<Login />} />
+        <Route exact path="/Signup" element={<Signup />} />
         <Route exact path="/" element={<Netflix />} />
         <Route exact path="/Player" element={<Player />} />
 
